@@ -1,0 +1,103 @@
+/*---------------------Main CSS-----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff; /* Dark mode will eventually be #191919 */
+    color: #191919; /* Dark mode: #fff */
+    margin-top: 10pt;
+    margin-left: 20pt;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*----------------------------------------------------*/
+
+/*-----------------Links that need CSS----------------*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.link:link {
+    color: black; /* Dark mode: white */
+    text-decoration: underline;
+}
+/*-----------------------------------------------------*/
+
+.headerBar {
+    background-color: #E5E5E5; /* Dark mode: #191919 */
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.image {
+    max-width: 100px;
+}
+
+.displayImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-----------------Drop down boxes----------------*/
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #E5E5E5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropDown:hover .dropdownContent {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropDown:hover .dropbtn {background-color: #ddd;}
+/*———————————————————————————---------------------*/
+
+.horizontalElement {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black; /* Dark mode: white */
+}
+
+.mainArticle {
+    background-color: #E5E5E5; /* Dark mode: #232323 */
+    position:relative;
+    margin-top: 25px;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}

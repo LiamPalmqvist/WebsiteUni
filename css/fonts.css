@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'lemon_milk_pro_ftrMdIt';
+    src: url('fonts/lemon_milk_pro_medium_italic-webfont.woff2') format('woff2'),
+         url('fonts/lemon_milk_pro_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'lemon_milk_pro_ftrmedium';
+    src: url('fonts/lemon_milk_pro_medium-webfont.woff2') format('woff2'),
+         url('fonts/lemon_milk_pro_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'lemon_milk_pro_ftrRgIt';
+    src: url('fonts/lemon_milk_pro_regular_italic-webfont.woff2') format('woff2'),
+         url('lemon_milk_pro_regular_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'lemon_milk_pro_ftrregular';
+    src: url('fonts/lemon_milk_pro_regular-webfont.woff2') format('woff2'),
+         url('fonts/lemon_milk_pro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
