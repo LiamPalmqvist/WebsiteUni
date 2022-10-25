@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#github--git-integration-for-ci435">Github + Git integration for CI435</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#pushing-and-committing-files">Pushing and committing files</a></li>
+<li><a href="#signing-into-git-with-github">Signing into Git with GitHub</a></li>
+<li><a href="#brighton.domains">brighton.domains</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="github--git-integration-for-ci435">Github + Git integration for CI435</h1>
+<p>This guide aims to enable you to create, manage and utilise repositories in Git for MacOS, Windows and Linux.</p>
+<h2 id="installation">Installation</h2>
+<p>To get started, install Brew if you haven’t already. This is imperative as it allows you to install Git and its dependencies.</p>
+<p>If you want to check that you have Brew installed, in the terminal enter<br>
+<code>brew --version</code></p>
+<h3 id="git">Git</h3>
+<p>To install Git, open your terminal program of choice and enter<br>
+<code>brew install git</code></p>
+<p>To test Git out and make sure it’s been installed properly in your currently open terminal enter<br>
+<code>git --version</code></p>
+<h3 id="git-credential-manager">Git credential manager</h3>
+<p>This will allow you to sign into Git using Github to edit your repositories.</p>
+<p>To install the credential manager, open the terminal and enter<br>
+<code>brew tap microsoft/git</code><br>
+<code>brew install --cask git-credential-manager-core</code></p>
+<p>You won’t need to do anything more with this as when you sign try to commit to your future repository the credential manager will automatically boot up and ask you to sign in.</p>
+<h3 id="setting-up-the-repository">Setting up the repository</h3>
+<p>Now that we’ve set up Git and the login manager, we can start to set up the files and folders necessary to use them</p>
+<p>Start by making a new public repository in Github<br>
+<img src="https://i.ibb.co/5WccbZN/Screenshot-2022-10-25-at-12-40-03.png" alt="TestImage"><br>
+Take note of the URL you’ve typed in as we’ll be using it later</p>
+<h3 id="setting-up-the-folder">Setting up the folder</h3>
+<p>Now, in your file browser, create the folder that will contain your code. If you’ve already got a folder with code that you wish to upload to GitHub, the process is the same.</p>
+<p>Take note of the address and enter terminal. In your terminal, cd into the directory you just created. This works on OneDrive too, so don’t worry about that.</p>
+<p>In terminal, in the directory you wish to create your repository in, enter<br>
+<code>git init</code><br>
+This will create an empty repository for you to fill and configure.</p>
+<p>If you already have files in the folder, enter<br>
+<code>git add .</code><br>
+This will add the files in the folder to the repository.</p>
+<p>To link the local git repository to the one you created on GitHub enter<br>
+<code>git remote add origin (URL)</code><br>
+Afterwards, we want to set up our main branch. To do this, enter<br>
+<code>git branch -M main</code><br>
+This will also put us on the main branch of the repository.</p>
+<p>to check the status of the main branch you just linked, enter<br>
+<code>git status on branch main</code></p>
+<p>The local Git repository should now be linked to the main branch of your GitHub repository</p>
+<h2 id="pushing-and-committing-files">Pushing and committing files</h2>
+<p>Git won’t automatically commit and push files to GitHub when you make changes so you have to do it yourself</p>
+<h3 id="committing-changes">Committing changes</h3>
+<p>To commit changes to a repository you’ll need to make sure that all the files you want to include are included in the Git repository. To include all new files, enter</p>
+<p><code>git add .</code></p>
+<p>This will do as it did before and add all the files in the folder to your repository to be included in commits and pushes.<br>
+<br></p>
+<p>to commit your changes now, you’ll need to provide a changeling. This can be as short as one word or as long as a paragraph, include bullet points, etc.</p>
+<p>This can be done easily with the <code>git commit -am "Comment"</code> command</p>
+<h3 id="pushing-to-github">Pushing to GitHub</h3>
+<p>This is easy as well. All you need to do to push your most recent changes is use<br>
+<code>git push -u origin main</code><br>
+This pushes all of your most recent changes in the commit command to the main branch of your GitHub repository.</p>
+<h2 id="signing-into-git-with-github">Signing into Git with GitHub</h2>
+<p>If it’s your first time using Git to manipulate an offline repo, you’ll be asked to sign into your GitHub account as soon as you try to commit or push for the first time. This is why we installed the Git Credential Manager earlier as it makes it easier for you to sign in.</p>
+<p>This method is also used as the previous sign in method which used the terminal to sign in was insecure and is now deprecated.</p>
+<p>This is fairly simple to do. Just follow the steps on the pop-up window that appears.</p>
+<h2 id="brighton.domains">brighton.domains</h2>
+<h3 id="creating-the-reference-and-linking-the-repository">Creating the reference and linking the repository</h3>
+<p>Once we’ve created our git repository and linked it to our GitHub one, we can now start to download our files to the brighton.domains file system.</p>
+<p><strong>NOTE:</strong> Linking our repository does <strong>NOT</strong> give brighton.domains permission to edit what is in the repository, only to download it.</p>
+<p>To do this, make sure your public_html folder is empty and create a git link in the Git Version Control page on brighton.domains<br>
+<img src="https://i.ibb.co/4gpQ7d7/Screenshot-2022-10-25-at-13-14-39.png" alt=""></p>
+<p>After, enter your url information, give it a name, and set the repository path to be in <code>/home/EX###/public_html</code>. Make sure “Clone a Repository” is turned <strong>ON</strong> and then hit <code>Create</code><br>
+<img src="https://i.ibb.co/qRpRwJm/Screenshot-2022-10-25-at-13-17-05.png" alt=""><br>
+This should have linked the repository to the <code>public_html</code> folder in your file system within brighton.domains</p>
+<h3 id="updating-the-website">Updating the website</h3>
+<p>Once the repo is linked, it won’t update unless asked to. This means we have to go into the settings for the repository link and update it to reflect the most recent changes.<br>
+<img src="https://i.ibb.co/ck0y8zb/Screenshot-2022-10-25-at-13-23-30.png" alt=""><br>
+Click <code>Manage</code> to enter the settings for the repo<br>
+<img src="https://i.ibb.co/K9259HX/Screenshot-2022-10-25-at-13-25-15.png" alt=""><br>
+Click <code>Pull or Deploy</code> to enter the deploy settings and then click <code>Update from Remote</code> to pull the most recent changes from the repository and update the site.</p>
+<blockquote>
+<p>Written by Liam Palmqvist using <a href="https://stackedit.io/">StackEdit</a></p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+
+</html>
