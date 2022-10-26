@@ -90,7 +90,7 @@ a:active {
     color: black; /* Dark mode: white */
 }
 
-.mainArticle {
+.article {
     background-color: #E5E5E5; /* Dark mode: #232323 */
     position:relative;
     margin-top: 25px;
