@@ -76,7 +76,7 @@ a:active {
 .dropdownContent a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropDown:hover .dropdownContent {display: block;}
+.dropDown:hover .dropdownContent {display: inline-block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropDown:hover .dropbtn {background-color: #ddd;}
