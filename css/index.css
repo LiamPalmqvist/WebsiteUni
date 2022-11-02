@@ -1,4 +1,27 @@
+/*---------------------Variables-----------------------*/
+
+:root {
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(243, 143, 177);
+}
+
+/*-----------------------------------------------------*/
+
+/*---------------------Animation-----------------------*/
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    } to {
+        background-position: -200% center;
+    }
+}
+
+/*-----------------------------------------------------*/
+
 /*---------------------Main CSS-----------------------*/
+
 * {
     box-sizing: border-box;
 }
@@ -74,7 +97,6 @@ a:active {
 
 .menuItem {
     display: none;
-    align: middle;
 }
 
 /* Change color of dropdown links on hover */
@@ -90,6 +112,8 @@ a:active {
 
 /*———————————————————————————---------------------*/
 
+/*---------------------Top Bar Elements-----------------------*/
+
 .horizontalElement {
     display: inline-block;
     vertical-align: middle;
@@ -97,6 +121,10 @@ a:active {
     padding-right: 10px;
     color: black; /* Dark mode: white */
 }
+
+/*------------------------------------------------------------*/
+
+/*---------------------Article + children-----------------------*/
 
 .pageArticle {
     background-color: #E5E5E5; /* Dark mode: #232323 */
@@ -109,3 +137,23 @@ a:active {
     border: 1px solid black;
     border-radius: 1rem;
 }
+
+p > .funkyText {
+    font-weight: bold;
+    font-size: 2000%;
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+/*--------------------------------------------------------------*/
+
