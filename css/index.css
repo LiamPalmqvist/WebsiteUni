@@ -137,9 +137,9 @@ li > .link:link {
 
 /*---------------------Article + children-----------------------*/
 
-p > .funkyText {
+div > .funkyText {
     font-weight: bold;
-    font-size: 22vmax;
+    font-size: 22vw;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
