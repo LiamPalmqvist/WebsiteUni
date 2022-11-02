@@ -21,21 +21,20 @@
 /*-----------------------------------------------------*/
 
 /*---------------------Main CSS-----------------------*/
-
 * {
     box-sizing: border-box;
 }
 
 body {
+    height: 100%;
+    align-items: stretch;
     background-color: #fff; /* Dark mode will eventually be #191919 */
     color: #191919; /* Dark mode: #fff */
-    margin-top: 10pt;
-    margin-left: 20pt;
+    margin: 0;
     font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0;
 }
 /*----------------------------------------------------*/
 
@@ -56,23 +55,24 @@ a:active {
     text-decoration: underline;
 }
 
-.link:link {
+li > .link:link {
     color: black; /* Dark mode: white */
     text-decoration: underline;
 }
+
 /*-----------------------------------------------------*/
 
 .headerBar {
-    background-color: #E5E5E5; /* Dark mode: #191919 */
-    border-radius: 10px;
+    background-color: #191919; /* Dark mode: #191919 */
+    padding-bottom: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
     justify-content: center;
-    border: 1px solid black;
+    text-align: center;
+    width: 100%;
 }
 
 .image {
-    max-width: 100px;
+    max-width: 90px;
 }
 
 .displayImage {
@@ -84,31 +84,42 @@ a:active {
 .dropDown {
     position: relative;
     display: inline-block;
+    align-items: center;
+}
+
+.dropbtn {
+    height: 100%;
 }
 
 .dropdownContent {
+    text-align: center;
     display: none;
     position: absolute;
-    background-color: #E5E5E5;
-    min-width: 160px;
+    background-color: #191919;
+    color: white;
+    min-width: 88%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .menuItem {
     display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: underline;
 }
 
 /* Change color of dropdown links on hover */
 .dropdownContent a:hover {
-    background-color: #ddd;
+    background-color: #343434;
 }
 
 /* Show the dropdown menu on hover */
 .dropDown:hover .dropdownContent {display: block;} .menuItem {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropDown:hover .dropbtn {background-color: #ddd;}
+.dropDown:hover .dropbtn {background-color: #343434;}
 
 /*———————————————————————————---------------------*/
 
@@ -119,24 +130,12 @@ a:active {
     vertical-align: middle;
     padding-left: 10px;
     padding-right: 10px;
-    color: black; /* Dark mode: white */
+    color: white; /* Dark mode: white */
 }
 
 /*------------------------------------------------------------*/
 
 /*---------------------Article + children-----------------------*/
-
-.pageArticle {
-    background-color: #E5E5E5; /* Dark mode: #232323 */
-    position:relative;
-    margin-top: 25px;
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    border: 1px solid black;
-    border-radius: 1rem;
-}
 
 p > .funkyText {
     font-weight: bold;
@@ -156,5 +155,31 @@ p > .funkyText {
     white-space: nowrap;
 }
 
+.pageArticle {
+    background-color: white; /* Dark mode: #232323 */
+    position:relative;
+    margin-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+}
+
 /*--------------------------------------------------------------*/
 
+/*---------------------Footer Content-----------------------*/
+
+.pageBottom {
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+.footerImage {
+    max-width: 90px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/*----------------------------------------------------------*/
