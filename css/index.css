@@ -140,7 +140,7 @@ a:active {
 
 p > .funkyText {
     font-weight: bold;
-    font-size: 2000%;
+    font-size: 22vmax;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
