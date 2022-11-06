@@ -9,60 +9,94 @@
 		<link rel="stylesheet" href="css/index.css"><!--linked css file-->
 		<link rel="stylesheet" href="css/fonts.css"><!--linked font definition css file-->
 		<link rel="stylesheet" href="https://use.typekit.net/dal5sha.css">
+		<!--With this css file I can directly reference font in other css files-->
 	</head>
 
-<body>
-<!--Markup all web page content inside the 'body' tags -->
-	<div>
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
-		<h1>Contact!</h1>
-		<h2>page heading</h2>
-		<h3>sub-heading</h3>
-	</header>
-	
-    <nav><!--The primary navigation for the page -->
-	<ul>
-		<li><a href="index.html">Learning Journal</a></li>
-		<li><a href="tutorial.html">Tutorial</a></li>
-        <li><a href="">Contact me</a></li>
-	</ul>
-	</nav>
-    
-    <main><!--The main page content -->
-        
-        	<h2>Weekly Posts</h2>
-	
-    	<article>
-			<header>
-			<h3>Week 1: ...</h3>
-			</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
-porttitor tellus, eget blandit urna nibh a metus. </p>
+	<body>
+	<!--Markup all web page content inside the 'body' tags -->
+		
+			<div id="headerBar" class="headerBar">
+			<!--The 'headerBar' contains all the content at the top of the page-->
 
-        <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
-        
-		</article>
-           
-    </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2>References</h2>
-            
-            	<ol>
-                	<li>...</li>
-                    <li>...</li>
-                </ol>
-            
-        </aside>    
- 
-  
-	<footer><!--Footer content -->
-		<small>&copy; 2022, Liam Palmqvist.</small>
-	</footer>
+				<!--Title of the page on the actual page-->
+				<h1 class="horizontalElement">Liam's Learning Journal!</h1>
+			
+				<div>
+					<!--Making a drop down button set-->
+					<div class="dropDown horizontalElement">
 
-	</div><!--Close 'wrapper' div -->
-</body><!--Close 'body' -->
+						<a class="horizontalElement dropbtn" href="index.html">Learning Journal</a>
+						<div class="dropdownContent">	
+							
+							<a class="menuItem link" href="/index.html#week1">Week 1</a>
+							<a class="menuItem link" href="/index.html#week2">Week 2</a>
+							<a class="menuItem link" href="/index.html#week3">Week 3</a>
+							<a class="menuItem link" href="/index.html#week4">Week 4</a>
+							<a class="menuItem link" href="/index.html#week5">Week 5</a>
+							<a class="menuItem link" href="/index.html#references">References</a>
+						
+						</div>
+
+					</div>
+					<!--End of making a drop down button set-->
+
+					<a class="horizontalElement" href="tutorial.html">Tutorial</a>
+					<a class="horizontalElement" href="contact.html">Contact me</a>
+					<a class="horizontalElement" href="README.html">Tester Page</a>
+				
+				</div>
+
+			</div>
+
+			
+		<div>
+
+			<main class="pageArticle"><!--The main page content -->
+				
+				<h1>Contact Me!</h1>
+				<p>NOT DONE YET</p>
+
+				<div class="mainDiv">
+
+					<nav class="contact_display">
+						
+						<a class="contact_button one" href="https://www.github.com/LiamPalmqvist">
+							<img src="/images/icons8-github.svg" class="contact_icon" alt="GitHub Icon">
+							<p>GitHub</p>
+						</a>
+
+						
+						<a class="contact_button two" href="https://twitter.com/LiamPalmqvist">
+							<img src="/images/icons8-twitter-480.svg" class="contact_icon" alt="Twitter Icon">
+							<p>Twitter</p>
+						</a>
+						
+						<a class="contact_button three" href="">
+							<img src="/images/icons8-youtube.svg" class="contact_icon" alt="YouTube Icon">
+							<p>YouTube</p>
+						</a>
+						
+						<a class="contact_button four" href="mailto:lpqvist@gmail.com">
+							<img src="/images/mail-142.svg" class="contact_icon" alt="Mail Icon">
+							<p>E-Mail</p>
+						</a>
+
+					</nav>
+
+					<div class="filler"></div>
+
+				</div>
+
+			</main><!--Close main page content --> 
+		
+				<footer class="pageBottom"><!--Footer content -->
+					
+					<div>
+						<small>&copy; 2022, Liam Palmqvist.</small>
+					</div>
+
+				</footer>
+
+			</div><!--Close 'wrapper' div -->
+	</body><!--Close 'body' -->
 </html><!--Close 'html' -->

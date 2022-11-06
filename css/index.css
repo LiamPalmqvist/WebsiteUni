@@ -4,6 +4,7 @@
     --purple: rgb(123, 31, 162);
     --violet: rgb(103, 58, 183);
     --pink: rgb(243, 143, 177);
+    --divText: #191919
 }
 
 /*-----------------------------------------------------*/
@@ -28,8 +29,8 @@
 body {
     height: 100%;
     align-items: stretch;
-    background-color: #fff; /* Dark mode will eventually be #191919 */
-    color: #191919; /* Dark mode: #fff */
+    background-color: #fff;
+    color: var(--divText);
     margin: 0;
     font-family: "roboto", sans-serif;
     font-weight: 400;
@@ -56,14 +57,14 @@ a:active {
 }
 
 li > .link:link {
-    color: black; /* Dark mode: white */
+    color: black;
     text-decoration: underline;
 }
 
 /*-----------------------------------------------------*/
 
 .headerBar {
-    background-color: #191919; /* Dark mode: #191919 */
+    background-color: var(--divText);
     padding-bottom: 20px;
     padding-top: 10px;
     justify-content: center;
@@ -95,7 +96,7 @@ li > .link:link {
     text-align: center;
     display: none;
     position: absolute;
-    background-color: #191919;
+    background-color: var(--divText);
     color: white;
     min-width: 88%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -157,7 +158,8 @@ article > .funkyText {
 
 .pageArticle {
     background-color: white; /* Dark mode: #232323 */
-    position:relative;
+    position: relative;
+    min-height: max-content;
     margin-top: 25px;
     padding-left: 10%;
     padding-right: 10%;
@@ -166,11 +168,68 @@ article > .funkyText {
 
 /*--------------------------------------------------------------*/
 
+/*---------------------Contact info---------------------*/
+
+.mainDiv {
+    display: flex
+}
+
+.contact_display {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+}
+
+.contact_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: var(--divText)
+}
+
+.contact_icon {
+    width: 30%;
+    padding: 10px;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.filler {
+    height: 80vh;
+}
+
+/*------------------------------------------------------*/
+
+/*---------------------Aside Content-----------------------*/
+
+/*---------------------------------------------------------*/
+
 /*---------------------Footer Content-----------------------*/
 
 .pageBottom {
     width: 100%;
-    background-color: #191919;
+    background-color: var(--divText);
     color: white;
     display: inline-block;
     text-align: center;
