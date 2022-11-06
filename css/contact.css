@@ -9,18 +9,6 @@
 
 /*-----------------------------------------------------*/
 
-/*---------------------Animation-----------------------*/
-
-@keyframes background-pan {
-    from {
-        background-position: 0% center;
-    } to {
-        background-position: -200% center;
-    }
-}
-
-/*-----------------------------------------------------*/
-
 /*---------------------Main CSS-----------------------*/
 * {
     box-sizing: border-box;
@@ -138,24 +126,6 @@ li > .link:link {
 
 /*---------------------Article + children-----------------------*/
 
-article > .funkyText {
-    font-weight: bold;
-    font-size: 22vw;
-    animation: background-pan 3s linear infinite;
-    background: linear-gradient(
-        to right,
-        var(--purple),
-        var(--violet),
-        var(--pink),
-        var(--purple)
-    );
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-}
-
 .pageArticle {
     background-color: white; /* Dark mode: #232323 */
     position: relative;
@@ -170,60 +140,30 @@ article > .funkyText {
 
 /*---------------------Contact info---------------------*/
 
-.mainDiv {
-    display: flex
-}
-
-.contact_display {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.socialLinks {
+    display: inline-flex;
     width: 100%;
-    height: fit-content;
 }
 
 .contact_button {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    color: var(--divText)
+    min-width: 20vw;
+    font-size: 7vw;
+    color: var(--divText);
+    width: 50%;
 }
 
 .contact_icon {
     width: 30%;
-    padding: 10px;
-}
-
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.three {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.four {
-    grid-column: 2;
-    grid-row: 2;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .filler {
-    height: 80vh;
+    height: 28vh;
 }
 
 /*------------------------------------------------------*/
-
-/*---------------------Aside Content-----------------------*/
-
-/*---------------------------------------------------------*/
 
 /*---------------------Footer Content-----------------------*/
 
@@ -234,12 +174,6 @@ article > .funkyText {
     display: inline-block;
     text-align: center;
     padding-bottom: 10px;
-}
-
-.footerImage {
-    max-width: 90px;
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
 }
 
 /*----------------------------------------------------------*/

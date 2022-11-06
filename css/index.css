@@ -168,59 +168,6 @@ article > .funkyText {
 
 /*--------------------------------------------------------------*/
 
-/*---------------------Contact info---------------------*/
-
-.mainDiv {
-    display: flex
-}
-
-.contact_display {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100%;
-    height: fit-content;
-}
-
-.contact_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large;
-    color: var(--divText)
-}
-
-.contact_icon {
-    width: 30%;
-    padding: 10px;
-}
-
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.two {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.three {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.four {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.filler {
-    height: 80vh;
-}
-
-/*------------------------------------------------------*/
-
 /*---------------------Aside Content-----------------------*/
 
 /*---------------------------------------------------------*/
