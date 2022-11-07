@@ -129,7 +129,7 @@ li > .link:link {
 .pageArticle {
     background-color: white; /* Dark mode: #232323 */
     position: relative;
-    min-height: max-content;
+    height: 100%;
     margin-top: 25px;
     padding-left: 10%;
     padding-right: 10%;
@@ -142,7 +142,10 @@ li > .link:link {
 
 .socialLinks {
     display: inline-flex;
+    height: 100%;
     width: 100%;
+    align-items: center;
+    align-content: center;
 }
 
 .contact_button {
@@ -157,10 +160,6 @@ li > .link:link {
     width: 30%;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.filler {
-    height: 28vh;
 }
 
 /*------------------------------------------------------*/

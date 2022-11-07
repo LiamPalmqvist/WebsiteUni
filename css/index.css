@@ -138,9 +138,21 @@ li > .link:link {
 
 /*---------------------Article + children-----------------------*/
 
+.pageArticle {
+    background-color: #EEEEEE; /* Dark mode: #232323 */
+    position: relative;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 article > .funkyText {
     font-weight: bold;
-    font-size: 22vw;
+    font-size: 19.5vw;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
@@ -154,16 +166,6 @@ article > .funkyText {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
-}
-
-.pageArticle {
-    background-color: white; /* Dark mode: #232323 */
-    position: relative;
-    min-height: max-content;
-    margin-top: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 15px;
 }
 
 /*--------------------------------------------------------------*/
