@@ -150,9 +150,34 @@ li > .link:link {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-article > .funkyText {
+/*
+This means that whenever this site is run on mobile
+or on a smaller width screen, the margin and background
+box shadow are removed
+*/
+@media (max-width: 767px) {
+    .corset {
+        padding-top: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white;
+        padding-bottom: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.funkyDiv {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.funkyText {
     font-weight: bold;
-    font-size: 19.5vw;
+    font-size: 17vw;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
