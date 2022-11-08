@@ -162,8 +162,6 @@ box shadow are removed
         padding-bottom: 0;
         margin-left: 15px;
         margin-right: 15px;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
     }
 }
