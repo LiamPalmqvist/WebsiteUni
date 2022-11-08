@@ -1,0 +1,268 @@
+/*---------------------Variables-----------------------*/
+
+:root {
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(243, 143, 177);
+    --divText: #191919
+}
+
+/*-----------------------------------------------------*/
+
+/*---------------------Animation-----------------------*/
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    } to {
+        background-position: -200% center;
+    }
+}
+
+/*-----------------------------------------------------*/
+
+/*---------------------Main CSS-----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    align-items: stretch;
+    background-color: #fff;
+    color: var(--divText);
+    margin: 0;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+}
+/*----------------------------------------------------*/
+
+/*-----------------Links that need CSS----------------*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+li > .link:link {
+    color: black;
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------*/
+
+.headerBar {
+    background-color: var(--divText);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.image {
+    max-width: 90px;
+}
+
+.displayImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-----------------Drop down boxes----------------*/
+.dropDown {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+}
+
+.dropbtn {
+    height: 100%;
+}
+
+.dropdownContent {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: var(--divText);
+    color: white;
+    min-width: 88%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuItem {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {
+    background-color: #343434;
+}
+
+/* Show the dropdown menu on hover */
+.dropDown:hover .dropdownContent {display: block;} .menuItem {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropDown:hover .dropbtn {background-color: #343434;}
+
+/*———————————————————————————---------------------*/
+
+/*---------------------Top Bar Elements-----------------------*/
+
+.topBarElement {
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white; /* Dark mode: white */
+}
+
+/*------------------------------------------------------------*/
+
+/*---------------------Article + children-----------------------*/
+
+.pageArticle {
+    background-color: #EEEEEE; /* Dark mode: #232323 */
+    position: relative;
+    padding-top: 25px;
+    background-color: white;
+    padding-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: none;
+    min-height: 100vh;
+    }
+
+.funkyDiv {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.funkyText {
+    font-weight: bold;
+    font-size: 17vw;
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+/*--------------------------------------------------------------*/
+
+/*---------------------Contact info---------------------*/
+
+.socialLinks {
+    display: block;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.contact_button {
+    display: flex;
+    align-self: center;
+    min-width: 20vw;
+    font-size: 15vw;
+    color: var(--divText);
+    width: 50%;
+    margin-bottom: -100px;
+}
+
+.contact_icon {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*------------------------------------------------------*/
+
+
+/*---------------------Aside Content-----------------------*/
+
+/*---------------------------------------------------------*/
+
+/*---------------------Footer Content-----------------------*/
+
+.pageBottom {
+    width: 100%;
+    background-color: var(--divText);
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footerImage {
+    max-width: 90px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/*----------------------------------------------------------*/
+
+/*
+This means that whenever this site is run on a desktop
+or on a bigger width screen, the margin and background
+box shadow are added
+*/
+@media (min-width: 767px) {
+    .headerBar {
+        padding-top: 0px;
+    }
+
+    .pageArticle {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        margin-left: 15%;
+        margin-right: 15%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .topBarElement {
+        display: inline-block;
+        margin-top: 0px;
+        vertical-align: middle;
+    }
+
+    .socialLinks {
+        display: inline-flex;
+        margin-top: -50px;
+    }
+
+    .contact_button {
+        font-size: 6vw;
+    }
+
+    .contact_icon {
+        width: 30%;
+    }
+}
