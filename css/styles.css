@@ -175,6 +175,11 @@ main {
     white-space: nowrap;
 }
 
+.videoPlayer {
+    display: none;
+}    
+
+
 /*--------------------------------------------------------------*/
 
 /*---------------------Contact info---------------------*/
@@ -274,5 +279,12 @@ box shadow are added
 
     .contact_icon {
         width: 30%;
+    }
+
+    .videoPlayer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        min-width: none;
     }
 }
