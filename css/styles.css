@@ -107,6 +107,7 @@ li > .link:link {
 
 .menuItem {
     display: none;
+    align-self: center;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -150,7 +151,7 @@ main {
     margin-right: 15px;
     box-shadow: none;
     min-height: 100vh;
-    }
+}
 
 .funkyDiv {
     text-align: center;
@@ -159,7 +160,7 @@ main {
 
 .funkyText {
     font-weight: bold;
-    font-size: 17vw;
+    font-size: 25vw;
     animation: background-pan 3s linear infinite;
     background: linear-gradient(
         to right,
@@ -186,11 +187,6 @@ main {
 
 .socialLinks {
     display: block;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    
 }
 
 .contact_button {
@@ -204,9 +200,7 @@ main {
 }
 
 .contact_icon {
-    width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: none;
 }
 
 /*------------------------------------------------------*/
@@ -249,8 +243,8 @@ box shadow are added
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 15px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 25%;
+        margin-right: 25%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -268,17 +262,28 @@ box shadow are added
         float: left;
     }
 
+    .funkyText {
+        font-size: 13vw;
+    }
+
     .socialLinks {
         display: inline-flex;
         margin-top: -50px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        align-content: center;
     }
 
     .contact_button {
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .contact_icon {
-        width: 30%;
+        display: block;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .videoPlayer {
