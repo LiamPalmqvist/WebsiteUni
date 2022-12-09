@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/lp889>/public_html #Add /<sub_folder> if required
+    - /bin/cp -r * $DEPLOYPATH
