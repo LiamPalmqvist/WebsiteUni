@@ -30,6 +30,8 @@
 					<a class="topBarElement dropbtn" href="index.html">Learning Journal</a>
 					<div class="dropdownContent">	
 						
+						<a class="menuItem link" href="/index.html#week10">Week 10</a> 
+						<a class="menuItem link" href="/index.html#week9">Week 9</a> 
 						<a class="menuItem link" href="/index.html#week8">Week 8</a> 
 						<a class="menuItem link" href="/index.html#week7">Week 7</a> 
 						<a class="menuItem link" href="/index.html#week6">Week 6</a>
@@ -59,7 +61,7 @@
 				</div>
 				<!--End of making a drop down button set-->
 
-				<a class="topBarElement" href="contact.html">Contact me</a>
+				<a class="topBarElement" href="contact.html">Contact</a>
 				<a class="topBarElement" href="README.html">Tester Page</a>
 			
 			</div>
@@ -74,51 +76,57 @@
 			<main>
 				
 				<h1>Contact Me!</h1>
-				<p>NOT DONE YET</p>
+			
+				<div class="contactForm">
+					<form>
+						<fieldset>
+							
+							<legend>Your details</legend>
+							<label for="name">Name <em>(required)</em></label>
+							<input type="text" id="name" required placeholder="first & last name">
+							<label for="email">email <em>(required)</em></label>
+							<input type="text" id="email" required placeholder="email">
+							<label for="website">Website Address</label>
+							<input type="text" id="website" placeholder="website address">
 
-				<nav>
-					
-					<div class="socialLinks">
+						</fieldset>
+						<fieldset>
 
-						<a class="contact_button" href="https://www.github.com/LiamPalmqvist">
-							<img src="/images/icons8-github.svg" class="contact_icon" alt="GitHub Icon">
-							<p>GitHub</p>
-						</a>
-
+							<legend>Any comments</legend>
+							<label for="message">Message:</label>
+							<textarea id="message" placeholder="click here to add comments!"></textarea>
 						
-						<a class="contact_button" href="https://twitter.com/LiamPalmqvist">
-							<img src="/images/icons8-twitter-480.svg" class="contact_icon" alt="Twitter Icon">
-							<p>Twitter</p>
-						</a>
+						</fieldset>
 					
-					</div>
-
-					<div class="socialLinks">
-
-						<a class="contact_button" href="">
-							<img src="/images/icons8-youtube.svg" class="contact_icon" alt="YouTube Icon">
-							<p>YouTube</p>
-						</a>
-						
-						<a class="contact_button" href="mailto:lpqvist@gmail.com">
-							<img src="/images/mail-142.svg" class="contact_icon" alt="Mail Icon">
-							<p>Email</p>
-						</a>
-					
-					</div>	
-
-				</nav>
+						<input type="submit" value="Submit">
+					</form>			
+				</div>	
 
 			</main>
 			
 			<!--Close main page content --> 
 	
 			<footer class="pageBottom"><!--Footer content -->
-				
+				<div>
+					<a href="#headerBar"><img class="footerImage" src="images/Feather-arrows-arrow-up.svg.png" alt="arrow"></a>
+				</div>
+				<div>
+					<a href="https://www.github.com/LiamPalmqvist">
+						<img src="images/icons8-github.svg" class="footerImage contactImage">
+					</a>
+					<a href="https://twitter.com/LiamPalmqvist">
+						<img src="images/icons8-twitter-480.svg" class="footerImage contactImage">
+					</a>
+					<a href="">
+						<img src="images/icons8-youtube.svg" class="footerImage contactImage">
+					</a>
+					<a href="mailto:lpqvist@gmail.com">
+						<img src="images/mail-142.svg" class="footerImage contactImage">
+					</a>
+				</div>
 				<div>
 					<small>&copy; 2022, Liam Palmqvist.</small>
 				</div>
-
 			</footer>
 		
 		</div><!--Close 'wrapper' div -->

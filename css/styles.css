@@ -185,22 +185,28 @@ main {
 
 /*---------------------Contact info---------------------*/
 
-.socialLinks {
+.contactForm {
+    width: 100%;
+    height: 100%;
+    margin: 2.5%;
+    padding-right: 4.5%;
     display: block;
 }
 
-.contact_button {
-    display: flex;
-    align-self: center;
-    min-width: 20vw;
-    font-size: 15vw;
-    color: var(--divText);
-    width: 50%;
-    margin-bottom: -100px;
+fieldset {
+    background-color: #eee;
 }
 
-.contact_icon {
-    display: none;
+form label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
 }
 
 /*------------------------------------------------------*/
@@ -225,6 +231,10 @@ main {
     max-width: 90px;
     filter: invert(100%);
     -webkit-filter: invert(100%);
+}
+
+.contactImage {
+    max-width: 40px;
 }
 
 /*----------------------------------------------------------*/
@@ -273,17 +283,6 @@ box shadow are added
         width: 100%;
         align-items: center;
         align-content: center;
-    }
-
-    .contact_button {
-        font-size: 4vw;
-    }
-
-    .contact_icon {
-        display: block;
-        width: 50%;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .videoPlayer {
