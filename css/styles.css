@@ -253,14 +253,14 @@ box shadow are added
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 15px;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 23%;
+        margin-right: 23%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .topBarElement {
         display: inline-block;
-        margin-top: 0px;
+        margin-top: 7px;
         vertical-align: middle;
     }
 
