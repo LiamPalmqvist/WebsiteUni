@@ -76,6 +76,7 @@ li > .link:link {
 .image {
     max-width: 90px;
     display: none;
+    padding-top: 8px;
 }
 
 .displayImage {
